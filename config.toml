@@ -1,0 +1,28 @@
+baseURL = "https://arcaneinvestigation.com/"
+languageCode = "en-us"
+title = "Arcane Investigation"
+
+[params]
+  description = "Professional Private Investigation Services in PA, NJ, MD, DE"
+  author = "Arcane Investigation"
+  phone = "(123) 456-7890"
+  email = "info@arcaneinvestigation.com"
+  address = "Serving PA, NJ, MD, DE"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4 

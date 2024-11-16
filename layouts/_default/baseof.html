@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-gray-900 text-white">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-xl font-bold">{{ .Site.Title }}</a>
+                <div class="hidden md:flex space-x-6">
+                    {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}" class="hover:text-blue-400">{{ .Name }}</a>
+                    {{ end }}
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

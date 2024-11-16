@@ -1,0 +1,26 @@
+/* Base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.container {
+    @apply max-w-6xl mx-auto px-4;
+}
+
+.btn {
+    @apply px-6 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition;
+}
+
+.heading {
+    @apply text-2xl font-bold mb-4;
+}
+
+/* Simple animations */
+.hover-lift {
+    @apply transition-transform duration-200;
+}
+
+.hover-lift:hover {
+    @apply -translate-y-1;
+} 

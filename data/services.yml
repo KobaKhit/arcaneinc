@@ -1,0 +1,35 @@
+- title: Insurance Defense
+  icon: fa-shield-alt
+  description: Comprehensive insurance defense investigations to protect your interests and prevent fraud.
+  details:
+    - Surveillance operations
+    - Claims verification
+    - Witness interviews
+    - Documentation collection
+
+- title: Personal Asset Recovery
+  icon: fa-search-dollar
+  description: Professional assistance in recovering your assets through legal and ethical means.
+  details:
+    - Asset location services
+    - Skip tracing
+    - Due diligence investigations
+    - Recovery assistance
+
+- title: Background Checks
+  icon: fa-user-check
+  description: Thorough background investigations for personal and professional purposes.
+  details:
+    - Employment screening
+    - Tenant screening
+    - Due diligence
+    - Personal background checks
+
+- title: Surveillance
+  icon: fa-video
+  description: Professional surveillance services with detailed documentation and reporting.
+  details:
+    - Video surveillance
+    - Photo documentation
+    - GPS tracking
+    - Detailed reporting 

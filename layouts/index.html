@@ -1,0 +1,57 @@
+{{ define "main" }}
+<!-- Hero Section with Services -->
+<section class="relative min-h-screen bg-gray-900 text-white py-20">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto px-6 relative z-10">
+        <!-- Hero Content -->
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Professional Private Investigation Services</h1>
+            <p class="text-xl mb-8">Serving PA, NJ, MD, and DE with integrity and professionalism</p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition">
+                <h3 class="text-xl font-bold mb-3">Insurance Defense</h3>
+                <p class="text-gray-200">Professional surveillance and investigations for insurance claims.</p>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition">
+                <h3 class="text-xl font-bold mb-3">Personal Asset Recovery</h3>
+                <p class="text-gray-200">Expert assistance in recovering assets through legal means.</p>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition">
+                <h3 class="text-xl font-bold mb-3">Background Checks</h3>
+                <p class="text-gray-200">Comprehensive background investigations for businesses and individuals.</p>
+            </div>
+            
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition">
+                <h3 class="text-xl font-bold mb-3">Surveillance</h3>
+                <p class="text-gray-200">Professional surveillance services with detailed documentation.</p>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center mt-12">
+            <a href="/contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition inline-block">
+                Contact Us
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+        <div class="max-w-lg mx-auto">
+            <div class="text-center mb-8">
+                <p class="mb-2">{{ .Site.Params.phone }}</p>
+                <p class="mb-2">{{ .Site.Params.email }}</p>
+                <p>{{ .Site.Params.address }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }} 
